@@ -10,10 +10,10 @@
 }
 
 :root {
-  --primary: #181918;
+  --primary: #191929;
   --text: #ebeaeb;
   /* --text-dark: # */
-  --accent: #343252;
+  --accent: #1f1e30;
 }
 
 .two-cols {
@@ -104,11 +104,10 @@ input[type="submit"] {
 /* Customize the scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
-  background: rgba(255, 255, 255, 0.1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--accent);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 6px;
 }
 .login-section {
@@ -128,4 +127,7 @@ input[type="submit"] {
   width: 100%;
   justify-content: space-between;
   height: 500px;
+}
+.login-section input {
+  margin-top: 1rem;
 }
