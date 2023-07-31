@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>HTML Forms Assignment</title>
+  </head>
+  <body>
+    <!-- CONTACT US FORM -->
+    <section>
+      <form action="#" method="POST">
+        <h1>Contact Us</h1>
+
+        <!-- Username -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="John Doe" />
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="johndoe@gmail.com" />
+
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Type your messsage..."
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <!-- LOGIN FORM -->
+    <section>
+      <div class="login-section two-cols">
+        <img src="./assets/bg.webp" alt="Mountains" />
+        <form action="#" method="POST">
+          <h1>Login</h1>
+
+          <!-- Username -->
+          <label for="name">Username:</label>
+          <input type="text" id="name" placeholder="john_doe" />
+
+          <!-- Password -->
+          <label for="email">Password:</label>
+          <input type="password" id="email" placeholder="johndoe@gmail.com" />
+
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </section>
+
+    <!-- SURVEY FORM -->
+    <section>
+      <form action="#" method="POST">
+        <h1>Survey</h1>
+
+        <!-- Username -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" />
+
+        <!-- Gender -->
+        <label>Gender:</label>
+
+        <div class="field-grp">
+          <div class="grp">
+            <input id="male" type="radio" name="gender" value="male" />
+            <label for="male">Male</label>
+          </div>
+          <div class="grp">
+            <input id="female" type="radio" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+          <div class="grp">
+            <input
+              id="prefer_not_to_say"
+              type="radio"
+              name="gender"
+              value="prefer_not_to_say"
+            />
+            <label for="prefer_not_to_say">BIOT</label>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- PROGRAMMING LANGUAGES -->
+        <label>Which programming languages do you know?</label>
+        <div class="field-grp">
+          <div class="grp">
+            <input type="checkbox" name="prog_lang" id="html" value="html" />
+            <label for="html">HTML</label>
+          </div>
+          <div class="grp">
+            <input type="checkbox" name="prog_lang" id="css" value="css" />
+            <label for="css">CSS</label>
+          </div>
+        </div>
+
+        <!-- COMMENTS -->
+        <label for="comments">Comments:</label>
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="What can you say?"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>

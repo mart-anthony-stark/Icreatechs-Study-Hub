@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Gidole;
+  src: url(./assets/fonts/Gidole-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gidole, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --primary: #181918;
+  --text: #ebeaeb;
+  /* --text-dark: # */
+  --accent: #343252;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--primary);
+  color: var(--text);
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Add styles for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* align-items: center; */
+  background: #e4e4e4;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* Style labels and inputs */
+label {
+  font-size: 1rem;
+  color: var(--accent);
+}
+.field-grp {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.grp {
+  display: flex;
+  gap: 10px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: unset;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+  accent-color: var(--accent);
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+textarea {
+  resize: none;
+}
+
+/* Style submit button */
+input[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 6px;
+}
+.login-section {
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  /* height: 500px !important; */
+  gap: 0;
+}
+.login-section img {
+  width: 100%;
+  height: 500px;
+}
+.login-section form {
+  border-radius: 0;
+  max-width: unset;
+  width: 100%;
+  justify-content: space-between;
+  height: 500px;
+}
